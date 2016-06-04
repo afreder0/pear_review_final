@@ -1,0 +1,55 @@
+<div class="page-header">
+  <h3>Restaurant #<%= @restaurant.id %></h3>
+</div>
+
+<div class="row">
+  <div class="col-md-12">
+    <dl class="dl-horizontal">
+      <dt>Cover image</dt>
+      <dd><%= @restaurant.cover_image %></dd>
+
+      <dt>Short description</dt>
+      <dd><%= @restaurant.short_description %></dd>
+
+      <dt>Lng</dt>
+      <dd><%= @restaurant.lng %></dd>
+
+      <dt>Lat</dt>
+      <dd><%= @restaurant.lat %></dd>
+
+      <dt>Price</dt>
+      <dd><%= @restaurant.price %></dd>
+
+      <dt>Neighborhood</dt>
+      <dd><%= @restaurant.neighborhood %></dd>
+
+      <dt>Zip</dt>
+      <dd><%= @restaurant.zip %></dd>
+
+      <dt>State</dt>
+      <dd><%= @restaurant.state %></dd>
+
+      <dt>City</dt>
+      <dd><%= @restaurant.city %></dd>
+
+      <dt>Street</dt>
+      <dd><%= @restaurant.street %></dd>
+
+      <dt>Name</dt>
+      <dd><%= @restaurant.name %></dd>
+
+    </dl>
+
+    <div class="btn-group btn-group-justified">
+      <a href="/restaurants" class="btn btn-primary">
+        Back
+      </a>
+      <a href="/restaurants/<%= @restaurant.id %>/edit" class="btn btn-warning">
+        Edit
+      </a>
+      <a href="/delete_restaurant/<%= @restaurant.id %>" class="btn btn-danger" rel="nofollow">
+        Delete
+      </a>
+    </div>
+  </div>
+</div>

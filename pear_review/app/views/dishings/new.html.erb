@@ -1,0 +1,46 @@
+<!-- Validation failure messages -->
+<% if @dishing.errors.any? %>
+  <% @dishing.errors.full_messages.each do |message| %>
+    <div class="alert alert-dismissable alert-danger">
+      <button type="button" class="close" data-dismiss="alert" aria-hidden="true">&times;</button>
+      <%= message %>
+    </div>
+  <% end %>
+<% end %>
+
+<div class="page-header">
+  <h3>Add Dishing</h3>
+</div>
+
+<div class="row">
+  <div class="col-md-12">
+    <form action="/create_dishing" method="post">
+      <!-- Hidden input for authenticity token to protect from forgery -->
+      <input name="authenticity_token" type="hidden" value="<%= form_authenticity_token %>">
+
+      <!-- Label and input for restaurant_id -->
+      <div class="form-group">
+        <label for="restaurant_id" class="control-label">
+          Restaurant
+        </label>
+
+        <input type="text" id="restaurant_id" name="restaurant_id" placeholder="Restaurant" class="form-control" value="<%= @dishing.restaurant_id %>">
+      </div>
+
+      <!-- Label and input for dish_id -->
+      <div class="form-group">
+        <label for="dish_id" class="control-label">
+          Dish
+        </label>
+
+        <input type="text" id="dish_id" name="dish_id" placeholder="Dish" class="form-control" value="<%= @dishing.dish_id %>">
+      </div>
+
+      <button class="btn btn-success">
+        Create Dishing
+      </button>
+      or
+      <a href="/dishings">Cancel</a>
+    </form>
+  </div>
+</div>

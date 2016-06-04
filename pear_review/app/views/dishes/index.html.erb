@@ -1,0 +1,28 @@
+<div class="page-header">
+  <h1>
+    Dishes
+    <a href="/dishes/new" class="btn btn-lg btn-success">New Dish</a>
+  </h1>
+</div>
+
+<div class="row">
+  <div class="col-md-12">
+    <table class="table table-striped table-hover">
+      <tr>
+        <th>Dish name</th>
+        <th>Actions</th>
+      </tr>
+
+      <% @dishes.each do |dish| %>
+      <tr>
+        <td><%= dish.dish_name %></td>
+        <td>
+          <a href="/dishes/<%= dish.id %>" class="btn btn-primary">Show</a>
+          <a href="/dishes/<%= dish.id %>/edit" class="btn btn-warning">Edit</a>
+          <a href="/delete_dish/<%= dish.id %>" class="btn btn-danger" rel="nofollow">Delete</a>
+        </td>
+      </tr>
+      <% end %>
+    </table>
+  </div>
+</div>

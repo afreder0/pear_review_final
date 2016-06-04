@@ -1,0 +1,37 @@
+<!-- Validation failure messages -->
+<% if @dish.errors.any? %>
+  <% @dish.errors.full_messages.each do |message| %>
+    <div class="alert alert-dismissable alert-danger">
+      <button type="button" class="close" data-dismiss="alert" aria-hidden="true">&times;</button>
+      <%= message %>
+    </div>
+  <% end %>
+<% end %>
+
+<div class="page-header">
+  <h3>Add Dish</h3>
+</div>
+
+<div class="row">
+  <div class="col-md-12">
+    <form action="/create_dish" method="post">
+      <!-- Hidden input for authenticity token to protect from forgery -->
+      <input name="authenticity_token" type="hidden" value="<%= form_authenticity_token %>">
+
+      <!-- Label and input for dish_name -->
+      <div class="form-group">
+        <label for="dish_name" class="control-label">
+          Dish name
+        </label>
+
+        <input type="text" id="dish_name" name="dish_name" placeholder="Dish name" class="form-control" value="<%= @dish.dish_name %>">
+      </div>
+
+      <button class="btn btn-success">
+        Create Dish
+      </button>
+      or
+      <a href="/dishes">Cancel</a>
+    </form>
+  </div>
+</div>
