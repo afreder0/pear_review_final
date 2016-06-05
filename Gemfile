@@ -1,5 +1,8 @@
 source 'https://rubygems.org'
 
+gem 'yelp', require: 'yelp'
+
+
 # Gemfile
 
 gem "starter_generators", :git => "http://github.com/raghubetina/starter_generators.git"
