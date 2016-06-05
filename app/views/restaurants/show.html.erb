@@ -5,38 +5,66 @@
 <div class="row">
   <div class="col-md-12">
     <dl class="dl-horizontal">
-      <dt>Cover image</dt>
-      <dd><%= @restaurant.cover_image %></dd>
+      <!-- <dt>Cover image</dt> -->
+      <dd><img src="<%= @restaurant.cover_image %>" alt="" /></dd>
 
-      <dt>Short description</dt>
-      <dd><%= @restaurant.short_description %></dd>
+      <dt>Name</dt>
+      <dd><%= @restaurant.name %></dd>
 
-      <dt>Lng</dt>
-      <dd><%= @restaurant.lng %></dd>
+      <% if @restaurant.street.present? %>
+      <dt>Street</dt>
+      <dd><%= @restaurant.street %></dd>
+          <% end %>
 
-      <dt>Lat</dt>
-      <dd><%= @restaurant.lat %></dd>
+          <% if @restaurant.neighborhood.present? %>
+          <dt>Neighborhood</dt>
+          <dd><%= @restaurant.neighborhood %></dd>
+              <% end %>
 
-      <dt>Price</dt>
-      <dd><%= @restaurant.price %></dd>
-
-      <dt>Neighborhood</dt>
-      <dd><%= @restaurant.neighborhood %></dd>
-
-      <dt>Zip</dt>
-      <dd><%= @restaurant.zip %></dd>
+              <% if @restaurant.city.present? %>
+              <dt>City</dt>
+              <dd><%= @restaurant.city %></dd>
+                  <% end %>
 
       <dt>State</dt>
       <dd><%= @restaurant.state %></dd>
 
-      <dt>City</dt>
-      <dd><%= @restaurant.city %></dd>
+      <% if @restaurant.zip.present? %>
+      <dt>Zip</dt>
+      <dd><%= @restaurant.zip %></dd>
+          <% end %>
 
-      <dt>Street</dt>
-      <dd><%= @restaurant.street %></dd>
+          <% if @restaurant.short_description.present? %>
+          <dt>Description</dt>
+          <dd><%= @restaurant.short_description %></dd>
+              <% end %>
 
-      <dt>Name</dt>
-      <dd><%= @restaurant.name %></dd>
+      <!-- <dt>Lng</dt>
+      <dd><%= @restaurant.lng %></dd>
+
+      <dt>Lat</dt>
+      <dd><%= @restaurant.lat %></dd> -->
+      <% if @restaurant.price.present? %>
+      <dt>Price</dt>
+      <dd><%= @restaurant.price %></dd>
+          <% end %>
+
+
+<p>
+  To Add:
+  1. Add a dish (add dishing)
+  2. See current dishes and popularith 
+</p>
+
+
+
+
+
+
+
+
+
+
 
     </dl>
 

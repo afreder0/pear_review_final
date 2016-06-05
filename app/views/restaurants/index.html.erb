@@ -16,9 +16,9 @@
     <th>State</th>
       <th>Short description</th>
         <!-- <th>Lng</th>
-        <th>Lat</th>
+        <!-- <th>Lat</th> -->
         <th>Price</th>
-        <th>Neighborhood</th>
+        <!-- <th>Neighborhood</th>
         <th>Zip</th> -->
 
 
@@ -30,16 +30,16 @@
       <% @restaurants.each do |restaurant| %>
       <tr>
         <td>
-<img src="<%= restaurant.cover_image %>" alt="" /></td>
+<img src="<%= restaurant.cover_image %>" alt="" width="200" height="200"/></td>
           <td><%= restaurant.name %></td>
             <td><%= restaurant.city %></td>
               <td><%= restaurant.state %></td>
         <td><%= restaurant.short_description %></td>
         <!-- <td><%= restaurant.lng %></td>
-        <td><%= restaurant.lat %></td>
+        <td><%= restaurant.lat %></td>-->
         <td><%= restaurant.price %></td>
-        <td><%= restaurant.neighborhood %></td>
-        <td><%= restaurant.zip %></td> -->
+        <!-- <td><%= restaurant.neighborhood %></td>
+        <td><%= restaurant.zip %></td>  -->
 
 
         <!-- <td><%= restaurant.street %></td> -->
