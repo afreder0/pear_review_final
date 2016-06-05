@@ -1,6 +1,10 @@
 <div class="page-header">
   <h1>
-Most Popular Dishes    <a href="/favorites/new" class="btn btn-lg btn-success">New Favorite</a>
+Most Popular Dishes
+<% if current_user.present? %><a href="/favorites/new" class="btn btn-lg btn-success">New Favorite</a>
+    <% end %>
+
+
   </h1>
 </div>
 
