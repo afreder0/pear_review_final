@@ -51,8 +51,47 @@
         </ul>
 
         <ul class="nav navbar-nav navbar-right">
-          <li><a href="/users/edit">Dummy Edit Profile Link</a></li>
-          <li><a href="/users/sign_out" data-method="delete" rel="nofollow">Dummy Sign Out Link</a></li>
+          <% if current_user.present? %>
+              <li>
+                <a href="/users/<%= current_user.id %>">
+                  <i class="fa fa-fw fa-user"></i>
+                  <span class="hidden-sm">
+                    My Favorites
+                  </span>
+                </a>
+              </li>
+              <% end %>
+            </ul>
+
+            <ul class="nav navbar-nav navbar-right">
+              <% if current_user.present? %>
+              <li>
+                <a href="/users/edit">
+                  <i class="fa fa-fw fa-edit"></i>
+                  <%= current_user.username %>
+                </a>
+              </li>
+              <li>
+                <a href="/users/sign_out" data-method="delete" rel="nofollow">
+                  <i class="fa fa-fw fa-sign-out"></i>
+                  Sign Out
+                </a>
+              </li>
+              <% else %>
+              <li>
+                <a href="/users/sign_in">
+                  Sign In
+                  </a>
+                </li>
+              <li>
+                <a href="/users/sign_up">
+                  Sign Up
+                  </a>
+                </li>
+              <% end %>
+
+          <!-- <li><a href="/users/edit">Dmy Edit Profile Lnk</a></li>
+          <li><a href="/users/sign_out" data-method="delete" rel="nofollow">Dmy Sign Out Lnk</a></li> -->
         </ul>
       </div><!-- /.navbar-collapse -->
     </div>

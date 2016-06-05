@@ -1,5 +1,6 @@
 Rails.application.routes.draw do
 
+
   # Routes for the Restaurant resource:
   # CREATE
   get "/restaurants/new", :controller => "restaurants", :action => "new"
@@ -120,6 +121,7 @@ Rails.application.routes.draw do
   #------------------------------
 
   devise_for :users
+
 root "favorites#index"
 
   # The priority is based upon order of creation: first created -> highest priority.
