@@ -47,4 +47,14 @@ class DishingsController < ApplicationController
 
     redirect_to "/dishings", :notice => "Dishing deleted."
   end
+
+  def dish_name
+    self.dish.name
+  end
+
+  def user_id
+    self.user.id
+  end
+
+
 end

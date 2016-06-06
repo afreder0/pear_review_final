@@ -25,7 +25,8 @@
         </label>
 
         <!-- <input type="text" id="user_id" name="user_id" placeholder="User" class="form-control" value="<%= @favorite.user_id %>"> -->
-        <input type="text" id="user_id" name="user_id" placeholder="User" class="form-control" value="<%= current_user.id %>">
+        <!-- <input type="text" id="user_id" name="user_id" placeholder="User" class="form-control" value="<%= current_user.id %>"> -->
+        <%= select_tag(:user_id, options_from_collection_for_select(@user, 'id', 'user_id', @user.id) %>
 
       </div>
 
@@ -37,7 +38,9 @@
           Dishing
         </label>
 
-        <input type="text" id="dishing_id" name="dishing_id" placeholder="Dishing" class="form-control" value="<%= @favorite.dishing_id %>">
+        <!-- <input type="text" id="dishing_id" name="dishing_id" placeholder="Dishing" class="form-control" value="<%= @favorite.dishing_id %>"> -->
+        <%= select_tag(:dishing_id, options_from_collection_for_select(@dishing, 'id', 'dish_name', @dishing.id) %>
+
       </div>
 
       <!-- Label and input for dishing_id -->
@@ -73,5 +76,6 @@
       or
       <a href="/favorites">Cancel</a>
     </form>
-  </div>
+</div>
+</div>
 </div>

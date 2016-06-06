@@ -14,7 +14,7 @@ class DishesController < ApplicationController
   def create
     @dish = Dish.new
     @dish.dish_name = params[:dish_name]
-
+@dish.category = params[:category]
     if @dish.save
       redirect_to "/dishes", :notice => "Dish created successfully."
     else
@@ -30,6 +30,8 @@ class DishesController < ApplicationController
     @dish = Dish.find(params[:id])
 
     @dish.dish_name = params[:dish_name]
+    @dish.category = params[:category]
+
 
     if @dish.save
       redirect_to "/dishes", :notice => "Dish updated successfully."
@@ -45,4 +47,11 @@ class DishesController < ApplicationController
 
     redirect_to "/dishes", :notice => "Dish deleted."
   end
+
+  def dish_name
+    self.dish.name
+  end
+
+
+
 end

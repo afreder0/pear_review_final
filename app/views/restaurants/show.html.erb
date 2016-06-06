@@ -1,5 +1,5 @@
 <div class="page-header">
-  <h3>Restaurant #<%= @restaurant.id %></h3>
+  <h3><%= @restaurant.name %></h3>
 </div>
 
 <div class="row">
@@ -8,8 +8,8 @@
       <!-- <dt>Cover image</dt> -->
       <dd><img src="<%= @restaurant.cover_image %>" alt="" /></dd>
 
-      <dt>Name</dt>
-      <dd><%= @restaurant.name %></dd>
+      <!-- <dt>Name</dt>
+      <dd><%= @restaurant.name %></dd> -->
 
       <% if @restaurant.street.present? %>
       <dt>Street</dt>
@@ -53,7 +53,7 @@
 <p>
   To Add:
   1. Add a dish (add dishing)
-  2. See current dishes and popularith 
+  2. See current dishes and popularith
 </p>
 
 
