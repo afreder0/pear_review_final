@@ -1,11 +1,11 @@
 <!-- Validation failure messages -->
 <% if @favorite.errors.any? %>
-  <% @favorite.errors.full_messages.each do |message| %>
-    <div class="alert alert-dismissable alert-danger">
-      <button type="button" class="close" data-dismiss="alert" aria-hidden="true">&times;</button>
-      <%= message %>
-    </div>
-  <% end %>
+<% @favorite.errors.full_messages.each do |message| %>
+<div class="alert alert-dismissable alert-danger">
+  <button type="button" class="close" data-dismiss="alert" aria-hidden="true">&times;</button>
+  <%= message %>
+</div>
+<% end %>
 <% end %>
 
 <div class="page-header">
@@ -23,52 +23,16 @@
         <label for="user_id" class="control-label">
           User
         </label>
-
-        <!-- <input type="text" id="user_id" name="user_id" placeholder="User" class="form-control" value="<%= @favorite.user_id %>"> -->
-        <!-- <input type="text" id="user_id" name="user_id" placeholder="User" class="form-control" value="<%= current_user.id %>"> -->
         <%= select_tag(:user_id, options_from_collection_for_select(@user, 'id', 'user_id', @user.id) %>
-
       </div>
-
-
 
       <!-- Label and input for dishing_id -->
       <div class="form-group">
         <label for="dishing_id" class="control-label">
           Dishing
         </label>
-
-        <!-- <input type="text" id="dishing_id" name="dishing_id" placeholder="Dishing" class="form-control" value="<%= @favorite.dishing_id %>"> -->
         <%= select_tag(:dishing_id, options_from_collection_for_select(@dishing, 'id', 'dish_name', @dishing.id) %>
-
       </div>
-
-      <!-- Label and input for dishing_id -->
-      <!-- <div class="form-group">
-        <label for="dish_id" class="control-label">
-          Dish
-        </label>
-
-        <input type="text" id="dish_id" name="dish_id" placeholder="Dish" class="form-control" value="<%= @favorite.dish_id %>">
-      </div> -->
-
-      <!-- Label and input for dishing_id -->
-      <!-- <div class="form-group">
-        <label for="restaurant_id" class="control-label">
-          Restaurant
-        </label>
-
-        <input type="text" id="restaurant_id" name="restaurant_id" placeholder="Restaurant" class="form-control" value="<%= @favorite.restaurant_id %>">
-      </div> -->
-
-      <!-- Label and input for dish_comment -->
-      <!-- <div class="form-group">
-        <label for="dish_comment" class="control-label">
-          Dish comment
-        </label>
-
-        <textarea id="dish_comment" name="dish_comment" placeholder="Dish comment" class="form-control" rows="3"><%= @favorite.dish_comment %></textarea>
-      </div> -->
 
       <button class="btn btn-success">
         Create Favorite
@@ -76,6 +40,5 @@
       or
       <a href="/favorites">Cancel</a>
     </form>
-</div>
-</div>
+  </div>
 </div>
