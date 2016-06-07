@@ -24,7 +24,6 @@
           Restaurant
         </label>
 
-        <!-- <input type="text" id="restaurant_id" name="restaurant_id" placeholder="Restaurant" class="form-control" value="<%= @dishing.restaurant_id %>"> -->
         <%= select_tag(:restaurant_id, options_from_collection_for_select(@dishing, 'id', 'restaurant_id', @dishing.id) %>
       </div>
 
@@ -34,7 +33,7 @@
           Dish
         </label>
         <%= select_tag(:dish_id, options_from_collection_for_select(@dishing, 'id', 'dish_id', @dishing.id) %>
-        <!-- <input type="text" id="dish_id" name="dish_id" placeholder="Dish" class="form-control" value="<%= @dishing.dish_id %>"> -->
+
 
       </div>
 
