@@ -23,7 +23,7 @@
         <label for="user_id" class="control-label">
           User
         </label>
-        <%= select_tag(:user_id, options_from_collection_for_select(@user, 'id', 'user_id', @user.id) %>
+        <%= select_tag(:user_id, options_from_collection_for_select(User.all, 'id', 'username')) %>
       </div>
 
       <!-- Label and input for dishing_id -->
@@ -31,7 +31,7 @@
         <label for="dishing_id" class="control-label">
           Dishing
         </label>
-        <%= select_tag(:dishing_id, options_from_collection_for_select(@dishing, 'id', 'dish_name', @dishing.id) %>
+        <%= select_tag(:dishing_id, options_from_collection_for_select(Dish.all, 'id', 'dish_name')) %>
       </div>
 
       <button class="btn btn-success">

@@ -27,6 +27,15 @@
         <input type="text" id="dish_name" name="dish_name" placeholder="Dish name" class="form-control" value="<%= @dish.dish_name %>">
       </div>
 
+      <!-- Label and input for dish category -->
+      <div class="form-group">
+        <label for="category" class="control-label">
+          Category
+        </label>
+
+        <input type="text" id="category" name="category" placeholder="Category" class="form-control" value="<%= @dish.category %>">
+      </div>
+      
       <button class="btn btn-success">
         Create Dish
       </button>

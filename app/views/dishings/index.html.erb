@@ -1,6 +1,6 @@
 <div class="page-header">
   <h1>
-    Menu Items
+    Menu Items (Dishings)
     <a href="/dishings/new" class="btn btn-lg btn-success">New Menu Item</a>
   </h1>
 </div>
@@ -16,8 +16,8 @@
 
       <% @dishings.each do |dishing| %>
       <tr>
-        <td><%= dishing.restaurant_id %></td>
-        <td><%= dishing.dish_id %></td>
+        <td><%= Restaurant.find(dishing.restaurant_id).name %></td>
+        <td><%= Dish.find(dishing.dish_id).dish_name %></td>
         <td>
           <a href="/dishings/<%= dishing.id %>" class="btn btn-primary">Show</a>
           <a href="/dishings/<%= dishing.id %>/edit" class="btn btn-warning">Edit</a>
