@@ -23,7 +23,7 @@
         <label for="restaurant_id" class="control-label">
           Restaurant
         </label>
-        <%= select_tag(:restaurant_id, options_from_collection_for_select(@dishing, 'id', 'restaurant_id', @dishing.id) ) %>
+        <%= select_tag(:dishing_id, options_from_collection_for_select(@dishing, 'id', 'name', @dishing.id) ) %>
       </div>
 
       <!-- Label and input for dish_id -->
@@ -31,7 +31,7 @@
         <label for="dish_id" class="control-label">
           Dish
         </label>
-        <%= select_tag(:dish_id, options_from_collection_for_select(@dishing, 'id', 'dish_id', @dishing.id) ) %>
+        <%= select_tag(:dishing_id, options_from_collection_for_select(@dishing, 'id', 'dish_name', @dishing.id)) %>
       </div>
 
       <button class="btn btn-success">
