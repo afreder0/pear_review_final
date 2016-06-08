@@ -23,7 +23,15 @@
         <label for="user_id" class="control-label">
           User
         </label>
-        <%= select_tag(:user_id, options_from_collection_for_select(User.all, 'id', 'username')) %>
+        <%= current_user.email %>
+      </div>
+
+      <!-- Label and input for restaurant_id -->
+      <div class="form-group">
+        <label for="restaurant_id" class="control-label">
+          Restaurant
+        </label>
+        <%= select_tag(:restaurant_id, options_from_collection_for_select(Restaurant.all, 'id', 'name') ) %>
       </div>
 
       <!-- Label and input for dishing_id -->
