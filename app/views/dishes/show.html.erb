@@ -1,15 +1,18 @@
 <div class="page-header">
-  <h3>Dish #<%= @dish.id %></h3>
+  <h3><%= @dish.dish_name %></h3>
 </div>
 
 <div class="row">
   <div class="col-md-12">
     <dl class="dl-horizontal">
-      <dt>Dish name</dt>
-      <dd><%= @dish.dish_name %></dd>
 <dt>Cateogry</dt>
 <dd><%= @dish.category %></dd>
     </dl>
+
+    <div class="page-header">
+      <h4>Best Restaurants for <%= @dish.dish_name %></h4>
+    </div>
+  
 
     <div class="btn-group btn-group-justified">
       <a href="/dishes" class="btn btn-primary">

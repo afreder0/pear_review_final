@@ -1,29 +1,28 @@
 <div class="page-header">
   <h1>
-Most Popular Dishes
+My Favorite Dishes
 <% if current_user.present? %><a href="/favorites/new" class="btn btn-lg btn-success">New Favorite</a>
     <% end %>
   </h1>
 </div>
-<p>
-  To Add: 1. Sort by most popular Dist 2. List most popular restaurant
-</p>
+
 
 <div class="row">
   <div class="col-md-12">
     <table class="table table-striped table-hover">
       <tr>
         <!-- <th>Dish comment</th> -->
-        <th>Dishing</th>
-        <th>User</th>
+        <th>Dish</th>
+        <th>Restaurant</th>
         <th>Actions</th>
       </tr>
 
       <% @favorites.each do |favorite| %>
       <tr>
         <!-- <td><%= favorite.dish_comment %></td> -->
-        <td><%= favorite.dishing_id %></td>
-        <td><%= favorite.user_id %></td>
+        <td><%= Dish.find(favorite.dishing_id).dish_name %></td>
+        <td><%= Restaurant.find(favorite.dishing_id).name %></td>
+
         <td>
           <a href="/favorites/<%= favorite.id %>" class="btn btn-primary">Show</a>
           <a href="/favorites/<%= favorite.id %>/edit" class="btn btn-warning">Edit</a>

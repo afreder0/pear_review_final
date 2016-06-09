@@ -14,8 +14,10 @@ class FavoritesController < ApplicationController
   def create
     @favorite = Favorite.new
     @favorite.dish_comment = params[:dish_comment]
-    @favorite.dishing_id = params[:dishing_id]
-    @favorite.user_id = params[:user_id]
+    @favorite.user_id = curent_user.id
+d = params[:dish_id]
+r = params[:restaurant_id]
+# find_by
 
     if @favorite.save
       redirect_to "/favorites", :notice => "Favorite created successfully."

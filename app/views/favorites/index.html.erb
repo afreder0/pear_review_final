@@ -14,7 +14,8 @@ Most Popular Dishes
     <table class="table table-striped table-hover">
       <tr>
         <!-- <th>Dish comment</th> -->
-        <th>Dishing</th>
+        <th>Dish</th>
+        <th>Restaurant</th>
         <th>User</th>
         <th>Actions</th>
       </tr>
@@ -22,8 +23,10 @@ Most Popular Dishes
       <% @favorites.each do |favorite| %>
       <tr>
         <!-- <td><%= favorite.dish_comment %></td> -->
-        <td><%= favorite.dishing_id %></td>
-        <td><%= favorite.user_id %></td>
+        <td><%= Dish.find(favorite.dishing_id).dish_name %></td>
+        <% d = Dishing.find(favorite.dishing_id) %>
+        <td><%= Restaurant.find(d.restaurant_id).name %></td>
+        <td><%= User.find(favorite.user_id).email %></td>
 
         <td>
           <a href="/favorites/<%= favorite.id %>" class="btn btn-primary">Show</a>
