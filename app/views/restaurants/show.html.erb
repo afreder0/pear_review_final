@@ -50,14 +50,13 @@
           <% end %>
 
 
-<p>
-  To Add:
-  1. Add a dish (add dishing)
-  2. See current dishes and popularith
-</p>
-
 <h3>Menu Items</h3>
 
+
+<!-- Stuck. How do I pull items that have been linked through the Dishing table -->
+  <% if restaurant.dish.any? %>
+  <%= dishing.dish.pluck(:dish_name) %>
+<% end %>
 
 
 

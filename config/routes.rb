@@ -60,6 +60,8 @@ Rails.application.routes.draw do
   # READ
   get "/favorites", :controller => "favorites", :action => "index"
   get "/favorites/:id", :controller => "favorites", :action => "show"
+  get "/favorites/user/:user_id", :controller => "favorites", :action => "my_index"
+
 
   # UPDATE
   get "/favorites/:id/edit", :controller => "favorites", :action => "edit"
@@ -121,6 +123,8 @@ Rails.application.routes.draw do
   #------------------------------
 
   devise_for :users
+
+
 
 root "favorites#index"
 

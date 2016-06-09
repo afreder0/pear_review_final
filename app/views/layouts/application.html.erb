@@ -53,7 +53,7 @@
         <ul class="nav navbar-nav navbar-right">
           <% if current_user.present? %>
               <li>
-                <a href="/users/<%= current_user.id %>">
+                <a href="/favorites/user/<%= current_user.id %>">
                   <i class="fa fa-fw fa-user"></i>
                   <span class="hidden-sm">
                     My Favorites

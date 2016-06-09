@@ -24,6 +24,15 @@
           User
         </label>
         <%= current_user.email %>
+        <input type="hidden" name="user_id" value="<%= current_user.id%>">
+      </div>
+
+      <!-- Label and input for dishing_id -->
+      <div class="form-group">
+        <label for="dishing_id" class="control-label">
+          Dish
+        </label>
+        <%= select_tag(:dishing_id, options_from_collection_for_select(Dish.all, 'id', 'dish_name')) %>
       </div>
 
       <!-- Label and input for restaurant_id -->
@@ -34,13 +43,7 @@
         <%= select_tag(:restaurant_id, options_from_collection_for_select(Restaurant.all, 'id', 'name') ) %>
       </div>
 
-      <!-- Label and input for dishing_id -->
-      <div class="form-group">
-        <label for="dishing_id" class="control-label">
-          Dishing
-        </label>
-        <%= select_tag(:dishing_id, options_from_collection_for_select(Dish.all, 'id', 'dish_name')) %>
-      </div>
+
 
       <button class="btn btn-success">
         Create Favorite
