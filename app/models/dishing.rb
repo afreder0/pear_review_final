@@ -1,6 +1,6 @@
 class Dishing < ActiveRecord::Base
-  has_many :favorites , :class_name => "Favorite", :foreign_key => "dishing_id"
-  has_many :pics , :class_name => "Pic", :foreign_key => "dishing_id"
+  has_many :favorites , :class_name => "Favorite", :foreign_key => "dishing_id", :dependent => :destroy
+  has_many :pics , :class_name => "Pic", :foreign_key => "dishing_id", :dependent => :destroy
 
   belongs_to :restaurant , :class_name => "Restaurant", :foreign_key => "restaurant_id"
   belongs_to :dish , :class_name => "Dish", :foreign_key => "dish_id"
