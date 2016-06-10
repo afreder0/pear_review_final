@@ -1,0 +1,31 @@
+<div class="page-header">
+  <h3>Pic #<%= @pic.id %></h3>
+</div>
+
+<div class="row">
+  <div class="col-md-12">
+    <dl class="dl-horizontal">
+      <dt>User</dt>
+      <dd><%= @pic.user_id %></dd>
+
+      <dt>Image</dt>
+      <dd><%= @pic.image %></dd>
+
+      <dt>Dishing</dt>
+      <dd><%= @pic.dishing_id %></dd>
+
+    </dl>
+
+    <div class="btn-group btn-group-justified">
+      <a href="/pics" class="btn btn-primary">
+        Back
+      </a>
+      <a href="/pics/<%= @pic.id %>/edit" class="btn btn-warning">
+        Edit
+      </a>
+      <a href="/delete_pic/<%= @pic.id %>" class="btn btn-danger" rel="nofollow">
+        Delete
+      </a>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,58 @@
+image,name,price,tags,neighborhood,street,city,state,zip,phone
+http://s3-media1.fl.yelpcdn.com/bphoto/wftgeLwED7YUjTtJri7rUQ/90s.jpg,Andiamo Pizzaria,$$,"Pizza, Italian",Lakeview,2814 N Halsted St,Chicago,IL,60657,(773) 250-3160
+http://s3-media3.fl.yelpcdn.com/bphoto/0YwBe8K0qI4SfW1SPjd1JA/90s.jpg,Au Cheval,$$,American (New),"Near West Side, West Loop",800 W Randolph S,Chicago,IL,60607,(312) 929-4580
+http://s3-media3.fl.yelpcdn.com/bphoto/kQ7z4THSnGGXwJTVN_VgZw/90s.jpg,Bandera Restaurant,$$,"Jazz & Blues, American (New)","Near North Side, River East",535 N Michigan Ave,Chicago,IL,60611,(312) 644-3524
+http://s3-media4.fl.yelpcdn.com/bphoto/na1CqPOXDLCZfalicSqW6w/90s.jpg,Big and Littles,$$,"Fish & Chips, Seafood, Burgers",Near North Side,860 N Orleans St,Chicago,IL,60610,(312) 943-0000
+http://s3-media4.fl.yelpcdn.com/bphoto/EIEE128ygWI518E0pAvJSQ/90s.jpg,Birrieria Zaragoza,$$,Mexican,Archer Heights,4852 S Pulaski Rd,Chicago,IL,60632,(773) 523-3700
+http://s3-media2.fl.yelpcdn.com/bphoto/0Ux1yiNlSjlIG3GOao0JRA/90s.jpg,Blaze Fast-Fire Pizza,$,"Pizza, Gluten-Free, Salad",Lakeview,953 W Belmont,Chicago,IL,60657,(773) 348-6255
+http://s3-media4.fl.yelpcdn.com/bphoto/x6jfttEVsBaf1QuRbV8H6w/90s.jpg,Blowfish Contemporary Sushi,$$,"Sushi Bars, Ramen",Edgewater,1131 W Bryn Mawr Ave,Chicago,IL,60660,(773) 654-3369
+http://s3-media4.fl.yelpcdn.com/bphoto/QjRT--3kLzGNToY6JA-nDw/90s.jpg,Brgrbelly,$$,Burgers,Jefferson Park,5691 N Milwaukee Ave,Chicago,IL,60646,(773) 775-6650
+http://s3-media4.fl.yelpcdn.com/bphoto/T-2A8qivVMaQBMUx3vEqdg/90s.jpg,BRGRBELLY,$$,Burgers,Portage Park,5739 W Irving Park Rd,Chicago,IL,60634,(773) 283-7880
+http://s3-media2.fl.yelpcdn.com/bphoto/w66kpw8UDT_Xe0OBsylgzA/90s.jpg,BryAnnas Restaurant,$$,Salvadoran,West Rogers Park,5695 N. Lincoln Ave.,Chicago,IL,60659,(224) 662-1400
+http://s3-media4.fl.yelpcdn.com/bphoto/Ual9STFDuw3ldM-f7she4A/90s.jpg,Chilango Mexican Street Food,$,Mexican,University Village,1437 W Taylor St,Chicago,IL,60607,(312) 846-6216
+http://s3-media3.fl.yelpcdn.com/bphoto/To6S7ScruN6H6xO1NMY-tg/90s.jpg,Coalfire Pizza,$$,Pizza,"Near West Side, West Loop, West Town",1321 W Grand Ave,Chicago,IL,60642,(312) 226-2625
+http://s3-media3.fl.yelpcdn.com/bphoto/fbgzUuhy1yRIFYtDAkVjyQ/90s.jpg,Cookies & Carnitas,$$,"Pizza, Sandwiches",Edgewater,5757 N Broadway St,Chicago,IL,60660,(773) 769-2900
+http://s3-media3.fl.yelpcdn.com/bphoto/WsZZmm5_raUMQKIZrFvGvg/90s.jpg,Doc Bs Fresh Kitchen,$$,American (New),Near North Side,100 E Walton St,Chicago,IL,60611,(312) 626-1300
+http://s3-media3.fl.yelpcdn.com/bphoto/6BrNPPEyvnpOQgOeB5UICQ/90s.jpg,El Habanero,$,"Mexican, Breakfast & Brunch",Logan Square,3300 W Fullerton Ave,Chicago,IL,60647,(773) 227-9225
+http://s3-media3.fl.yelpcdn.com/bphoto/0aHEJkUjrEeDMbUhiBh-OA/90s.jpg,El Taco Feliz Taqueria,$,Mexican,Portage Park,5439 W Addison St,Chicago,IL,60641,(773) 283-4377
+http://s3-media1.fl.yelpcdn.com/bphoto/zYQoj9nJYzAPlE3E9OBlpg/90s.jpg,En Hakkore,$$,Korean,Bucktown,1840 N Damen Ave,Chicago,IL,60647,(773) 772-9880
+http://s3-media1.fl.yelpcdn.com/bphoto/tqnrqzo9wjBzKLVRaiRs6w/90s.jpg,Flub A Dub Chubs,$,Hot Dogs,Lakeview,3021 N Broadway,Chicago,IL,60657,(773) 857-6500
+http://s3-media2.fl.yelpcdn.com/bphoto/bpugucoRg5eqDQHPVJedIA/90s.jpg,Forno Rosso Pizzeria Napoletana,$$,Pizza,"Near West Side, West Loop",1048 W Randolph St,Chicago,IL,60607,(312) 243-6000
+http://s3-media2.fl.yelpcdn.com/bphoto/3CXLTdIY5TencOP9hgr9SQ/90s.jpg,Highway House,$$,Salad,Norwood Park,5653 N Northwesy Highway,Chicago,IL,60646,(773) 657-3534
+http://s3-media2.fl.yelpcdn.com/bphoto/7JPZ6suN-0qmxupNJNCXRw/90s.jpg,Homeslice,$$,Pizza,"Lincoln Park, DePaul",938 W Webster,Chicago,IL,60614,(312) 789-4600
+http://s3-media2.fl.yelpcdn.com/bphoto/REXEIr_09UomT2ZU-Us1AQ/90s.jpg,Hot Dog Station,$,Hot Dogs,Albany Park,4742 N Kimball,Chicago,IL,60625,(773) 588-2580
+http://s3-media2.fl.yelpcdn.com/bphoto/c-b-rf8ODD_yXY6TCWw7SA/90s.jpg,Ixcateco Grill,$$,Mexican,Albany Park,3402 W Montrose Ave,Chicago,IL,60618,(773) 539-5887
+http://s3-media2.fl.yelpcdn.com/bphoto/bitTeA81-5rSeLTJKVn7dw/90s.jpg,Jarabe Mexican Street Food,$,"Mexican, Latin American, Tex-Mex",Tri-Taylor,2255 W Taylor St,Chicago,IL,60612,(312) 877-5005
+http://s3-media2.fl.yelpcdn.com/bphoto/C1sFGP52nw2g6VUyBuxfvw/90s.jpg,Jimmys Pizza Cafe,$,"Pizza, Cafes",Lincoln Square,5159 N Lincoln Ave,Chicago,IL,60625,(773) 293-6992
+http://s3-media1.fl.yelpcdn.com/bphoto/mtS1OXv-N1oJJ2jRs0cv4Q/90s.jpg,Kai Sushi,$$,"Sushi Bars, Japanese",Near Southside,1255 S State St,Chicago,IL,60605,(312) 583-0567
+http://s3-media3.fl.yelpcdn.com/bphoto/WaEkgtj6EjHmfjb7Oxxomg/90s.jpg,Kai Zan,$$$,"Asian Fusion, Japanese, Sushi Bars","Humboldt Park, West Town",2557 W Chicago Ave,Chicago,IL,60622,(773) 278-5776
+http://s3-media1.fl.yelpcdn.com/bphoto/7ipOMFbVvdwGWLhWGqqfJg/90s.jpg,Katsu,$$$,"Japanese, Sushi Bars",West Rogers Park,2651 W Peterson Ave,Chicago,IL,60659,(773) 784-3383
+http://s3-media3.fl.yelpcdn.com/bphoto/Jm-e_Iom4WC5rhTa049ghg/90s.jpg,Kerelys Cuban Cafe and Pizzeria,$,"Cuban, Pizza",Avondale,2934 N Milwaukee Ave,Chicago,IL,60618,(773) 394-4040
+http://s3-media4.fl.yelpcdn.com/bphoto/t6xAfBJT63bkwyQBEdHFcw/90s.jpg,Kumas Corner,$$,"Pubs, Burgers",Avondale,2900 W Belmont Ave,Chicago,IL,60618,(773) 604-8769
+http://s3-media1.fl.yelpcdn.com/bphoto/UCQ_GIv4ViTiQGLL0-CMhQ/90s.jpg,Kyoto Sushi Steak Seafood,$$,"Sushi Bars, Seafood, Steakhouses",Lincoln Park,401 W Fullerton Pkwy,Chicago,IL,60614,(773) 477-2788
+http://s3-media1.fl.yelpcdn.com/bphoto/AqzJqMmURWWIj4AVN0xidA/90s.jpg,Kyu Ssam,$$,"Sushi Bars, Korean",West Town,939 N Ashland Ave,Chicago,IL,60622,(224) 252-1857
+http://s3-media3.fl.yelpcdn.com/bphoto/VIIZr-LxviPvMqzTezdfjA/90s.jpg,L Patron Tacos,$,Mexican,Logan Square,2815 W Diversey Ave,Chicago,IL,60647,(773) 252-6335
+http://s3-media1.fl.yelpcdn.com/bphoto/5PFbCyVmWOPBIbujtHO31w/90s.jpg,Lawrence Fish Market,$,Sushi Bars,Albany Park,3914 W Lawrence Ave,Chicago,IL,60625,(773) 267-6838
+http://s3-media2.fl.yelpcdn.com/bphoto/7H2rx7QxQpOr5dDUyWKyAQ/90s.jpg,Little Bad Wolf,$$,American (Traditional),"Andersonville, Edgewater",1541 W Bryn Mawr Ave,Chicago,IL,60660,(773) 942-6399
+http://s3-media3.fl.yelpcdn.com/bphoto/u0cf7lfA7szq5XIX5u5KJw/90s.jpg,Nicks On North,$,Hot Dogs,Humboldt Park,3323 W North Ave,Chicago,IL,60647,(773) 292-6425
+http://s3-media4.fl.yelpcdn.com/bphoto/qisvl5A5wVOWotYtlhqJbQ/90s.jpg,Ora,$$,"Sushi Bars, Japanese","Andersonville, Uptown",5143 N Clark St,Chicago,IL,60640,(773) 506-2978
+http://s3-media2.fl.yelpcdn.com/bphoto/BHJUiQSdpcVr4zfEdYhX_g/90s.jpg,Owen & Engine,$$,"Gastropubs, British","Logan Square, Bucktown",2700 N Western Ave,Chicago,IL,60647,(773) 235-2930
+http://s3-media4.fl.yelpcdn.com/bphoto/d4XFI3zpvn0zVRtoONJegw/90s.jpg,Parrilla Express,$,Burgers,,6401 W 34th St,Berwyn,IL,60402,(708) 628-4226
+http://s3-media4.fl.yelpcdn.com/bphoto/5lvsnn-gQqrpxV5GxQ86WA/90s.jpg,Patinos Grill,$,American (Traditional),Irving Park,2943 W Irving Park Rd,Chicago,IL,60618,(773) 280-9562
+http://s3-media3.fl.yelpcdn.com/bphoto/4gqGUz7JgF3-IkQcXmNwYg/90s.jpg,Pi-Hi Cafe,$,"Mediterranean, Pizza",Roscoe Village,3539 N Western Ave,Chicago,IL,60618,(773) 472-7444
+http://s3-media2.fl.yelpcdn.com/bphoto/WirfYN_gDOU2Y2NLz97s_A/90s.jpg,Pizzeria Del Mercato,$$,"Pizza, Italian","Near West Side, West Loop",1154 W Fulton Market,Chicago,IL,60607,(312) 226-6898
+http://s3-media3.fl.yelpcdn.com/bphoto/aZbLezfbiG3Z3N9XofMCKg/90s.jpg,Pollo Express,$,Mexican,Pilsen,1315 W 18th St,Chicago,IL,60608,(312) 829-1550
+http://s3-media4.fl.yelpcdn.com/bphoto/RClfxHX4hk1MmGjPBJgqBg/90s.jpg,Pueblo Nuevo,$,Mexican,Portage Park,4342 N Central Ave,Chicago,IL,60634,(773) 283-8058
+http://s3-media1.fl.yelpcdn.com/bphoto/JHxp3QtismVOzz6mmI6kEQ/90s.jpg,Siena Tavern,$$$,"Italian, American (New), Pizza",Near North Side,51 W Kinzie St,Chicago,IL,60654,(312) 595-1322
+http://s3-media2.fl.yelpcdn.com/bphoto/vyGLSa_qwM446QZ-wbFcHw/90s.jpg,Slims,$,Sandwiches,Ravenswood,2020 W Montrose Ave,Chicago,IL,60618,(224) 265-0143
+http://s3-media3.fl.yelpcdn.com/bphoto/JfBflp9xBPO0QEHXMjs_lQ/90s.jpg,South Coast Sushi,$$$,"Sushi Bars, Japanese",Near Southside,1700 S Michigan Ave,Chicago,IL,60616,(312) 662-1700
+http://s3-media4.fl.yelpcdn.com/bphoto/dz7QBwwycIkkVN8t7JgylA/90s.jpg,Sumo Sushi & Hibachi Grill,$$,"Sushi Bars, Japanese",Lakeview,2936 N Broadway,Chicago,IL,60657,(773) 477-8510
+http://s3-media1.fl.yelpcdn.com/bphoto/KXwqDUNKWG-mrvLu2PRgvA/90s.jpg,The Bad Apple,$$,"Bars, Burgers",North Center,4300 N Lincoln Ave,Chicago,IL,60618,(773) 360-8406
+http://s3-media2.fl.yelpcdn.com/bphoto/Lv-IsWTnpouDTIKWSmGvjw/90s.jpg,The Gage,$$$,"Irish, Gastropubs, American (New)",The Loop,24 S Michigan Ave,Chicago,IL,60603,(312) 372-4243
+http://s3-media4.fl.yelpcdn.com/bphoto/4s8d7DbRJqFfU6_w-klu_Q/90s.jpg,Toro Sushi,$$,Sushi Bars,Lincoln Park,2546 N Clark St,Chicago,IL,60614,(773) 348-7255
+http://s3-media2.fl.yelpcdn.com/bphoto/_aA25NLUTW9_Uii8nbEcEg/90s.jpg,Torta Haus,$,"Mexican, Cuban",,926 W Diversey Pkwy,Chicago,IL,60614,(773) 880-8052
+http://s3-media2.fl.yelpcdn.com/bphoto/wU6RSG_Cp9oqk8eNsI49Bw/90s.jpg,Tortorices Pizza,$$,"Italian, Pizza, Gelato","West Town, Ukrainian Village",1746 W Grand Ave,Chicago,IL,60622,(312) 243-4444
+http://s3-media1.fl.yelpcdn.com/bphoto/Fbe1Etkh1bac8HXlgbquwA/90s.jpg,Twin Anchors Restaurant & Tavern,$$,"American (Traditional), Barbeque",Lincoln Park,1655 N Sedgwick St,Chicago,IL,60614,(312) 266-1616
+http://s3-media2.fl.yelpcdn.com/bphoto/NlQMmSn1nlPg88VSctgYvg/90s.jpg,UB Dogs,$,Hot Dogs,The Loop,185 N Franklin St,Chicago,IL,60606,(312) 251-7009
+http://s3-media2.fl.yelpcdn.com/bphoto/jn3JXGgxr0eym1alrjcXAw/90s.jpg,VPT,$$,"Pizza, Burgers, Mexican",West Rogers Park,5754 N Western Ave,Chicago,IL,60659,(773) 274-7018
+http://s3-media2.fl.yelpcdn.com/bphoto/XKKEnNY21K9CTETSxxCyRQ/90s.jpg,Yuzu Sushi & Robata Grill,$$,"Japanese, Sushi Bars","West Town, Ukrainian Village",1751 W Chicago Ave,Chicago,IL,60622,(312) 666-4100

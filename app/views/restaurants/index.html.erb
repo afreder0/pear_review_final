@@ -1,0 +1,56 @@
+<div class="page-header">
+  <h1>
+    Restaurants
+    <a href="/restaurants/new" class="btn btn-lg btn-success">New Restaurant</a>
+  </h1>
+</div>
+
+<div class="row">
+  <div class="col-md-12">
+    <table class="table table-striped table-hover">
+      <tr>
+        <th>Cover image</th>
+
+<th>Name</th>
+  <th>City</th>
+    <th>State</th>
+      <!-- <th>Short description</th> -->
+        <!-- <th>Lng</th>
+        <!-- <th>Lat</th> -->
+        <th>Price</th>
+        <!-- <th>Neighborhood</th>
+        <th>Zip</th> -->
+
+
+        <!-- <th>Street</th> -->
+
+        <th>Actions</th>
+      </tr>
+
+      <% @restaurants.order('name').each do |restaurant| %>
+      <tr>
+        <td>
+<img src="<%= restaurant.cover_image %>" alt="" width="200" height="200"/></td>
+          <td><%= restaurant.name %></td>
+            <td><%= restaurant.city %></td>
+              <td><%= restaurant.state %></td>
+        <!-- <td><%= restaurant.short_description %></td> -->
+        <!-- <td><%= restaurant.lng %></td>
+        <td><%= restaurant.lat %></td>-->
+        <td><%= restaurant.price %></td>
+        <!-- <td><%= restaurant.neighborhood %></td>
+        <td><%= restaurant.zip %></td>  -->
+
+
+        <!-- <td><%= restaurant.street %></td> -->
+
+        <td>
+          <a href="/restaurants/<%= restaurant.id %>" class="btn btn-primary">Show</a>
+          <a href="/restaurants/<%= restaurant.id %>/edit" class="btn btn-warning">Edit</a>
+          <a href="/delete_restaurant/<%= restaurant.id %>" class="btn btn-danger" rel="nofollow">Delete</a>
+        </td>
+      </tr>
+      <% end %>
+    </table>
+  </div>
+</div>

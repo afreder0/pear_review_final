@@ -1,0 +1,62 @@
+<!-- Validation failure messages -->
+<% if @favorite.errors.any? %>
+  <% @favorite.errors.full_messages.each do |message| %>
+    <div class="alert alert-dismissable alert-danger">
+      <button type="button" class="close" data-dismiss="alert" aria-hidden="true">&times;</button>
+      <%= message %>
+    </div>
+  <% end %>
+<% end %>
+
+<div class="page-header">
+  <h3>Edit Favorite #<%= @favorite.id %></h3>
+</div>
+
+<div class="row">
+  <div class="col-md-12">
+    <form action="/update_favorite/<%= @favorite.id %>" method="post">
+      <!-- Hidden input for authenticity token to protect from forgery -->
+      <input name="authenticity_token" type="hidden" value="<%= form_authenticity_token %>">
+
+      <!-- Label and input for dish_id -->
+      <div class="form-group">
+        <label for="dishing_id" class="control-label">
+          Dish
+        </label>
+        <%= select_tag(:dish_id, options_from_collection_for_select(Dish.all, 'id', 'dish_name')) %>
+      </div>
+
+      <!-- Label and input for restaurant_id -->
+      <div class="form-group">
+        <label for="restaurant_id" class="control-label">
+          Restaurant
+        </label>
+        <%= select_tag(:restaurant_id, options_from_collection_for_select(Restaurant.all, 'id', 'name') ) %>
+      </div>
+
+      <!-- Label and input for user_id -->
+      <div class="form-group">
+        <label for="user_id" class="control-label">
+          User
+        </label>
+
+        <input type="text" id="user_id" name="user_id" placeholder="User" class="form-control" value="<%= User.find(@favorite.user_id).email %>">
+      </div>
+
+      <!-- Label and input for dish_comment -->
+      <!-- <div class="form-group">
+        <label for="dish_comment" class="control-label">
+          Dish comment
+        </label>
+
+        <textarea id="dish_comment" name="dish_comment" placeholder="Dish comment" class="form-control" rows="3"><%= @favorite.dish_comment %></textarea>
+      </div> -->
+
+      <button class="btn btn-warning">
+        Update Favorite
+      </button>
+      or
+      <a href="/favorites/<%= @favorite.id %>">Cancel</a>
+    </form>
+  </div>
+</div>
