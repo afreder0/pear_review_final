@@ -18,22 +18,20 @@
       <!-- Hidden input for authenticity token to protect from forgery -->
       <input name="authenticity_token" type="hidden" value="<%= form_authenticity_token %>">
 
-      <!-- Label and input for dish_comment -->
-      <div class="form-group">
-        <label for="dish_comment" class="control-label">
-          Dish comment
-        </label>
-
-        <textarea id="dish_comment" name="dish_comment" placeholder="Dish comment" class="form-control" rows="3"><%= @favorite.dish_comment %></textarea>
-      </div>
-
-      <!-- Label and input for dishing_id -->
+      <!-- Label and input for dish_id -->
       <div class="form-group">
         <label for="dishing_id" class="control-label">
-          Dishing
+          Dish
         </label>
+        <%= select_tag(:dish_id, options_from_collection_for_select(Dish.all, 'id', 'dish_name')) %>
+      </div>
 
-        <input type="text" id="dishing_id" name="dishing_id" placeholder="Dishing" class="form-control" value="<%= @favorite.dishing_id %>">
+      <!-- Label and input for restaurant_id -->
+      <div class="form-group">
+        <label for="restaurant_id" class="control-label">
+          Restaurant
+        </label>
+        <%= select_tag(:restaurant_id, options_from_collection_for_select(Restaurant.all, 'id', 'name') ) %>
       </div>
 
       <!-- Label and input for user_id -->
@@ -42,8 +40,17 @@
           User
         </label>
 
-        <input type="text" id="user_id" name="user_id" placeholder="User" class="form-control" value="<%= @favorite.user_id %>">
+        <input type="text" id="user_id" name="user_id" placeholder="User" class="form-control" value="<%= User.find(@favorite.user_id).email %>">
       </div>
+
+      <!-- Label and input for dish_comment -->
+      <!-- <div class="form-group">
+        <label for="dish_comment" class="control-label">
+          Dish comment
+        </label>
+
+        <textarea id="dish_comment" name="dish_comment" placeholder="Dish comment" class="form-control" rows="3"><%= @favorite.dish_comment %></textarea>
+      </div> -->
 
       <button class="btn btn-warning">
         Update Favorite

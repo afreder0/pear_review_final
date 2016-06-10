@@ -9,6 +9,10 @@ class FavoritesController < ApplicationController
 
   def show
     @favorite = Favorite.find(params[:id])
+    @favorite.dish_comment = params[:dish_comment]
+    @favorite.user_id = current_user.id
+    d = params[:dish_id]
+    r = params[:restaurant_id]
   end
 
   def new
@@ -18,7 +22,7 @@ class FavoritesController < ApplicationController
   def create
     @favorite = Favorite.new
     @favorite.dish_comment = params[:dish_comment]
-    @favorite.user_id = curent_user.id
+    @favorite.user_id = current_user.id
     d = params[:dish_id]
     r = params[:restaurant_id]
     # find_by

@@ -13,7 +13,6 @@ Most Popular Dishes
         <!-- <th>Dish comment</th> -->
         <th>Dish</th>
         <th>Restaurant</th>
-        <th>User</th>
         <th>Actions</th>
       </tr>
 
@@ -23,10 +22,9 @@ Most Popular Dishes
         <td><%= Dish.find(favorite.dishing_id).dish_name %></td>
         <% d = Dishing.find(favorite.dishing_id) %>
         <td><%= Restaurant.find(d.restaurant_id).name %></td>
-        <td><%= User.find(favorite.user_id).email %></td>
 
         <td>
-          <a href="/favorite/<%= favorite.id %>" class="btn btn-primary">Show</a>
+          <a href="/favorites/<%= favorite.id %>" class="btn btn-primary">Show</a>
           <a href="/favorites/<%= favorite.id %>/edit" class="btn btn-warning">Edit</a>
           <a href="/delete_favorite/<%= favorite.id %>" class="btn btn-danger" rel="nofollow">Delete</a>
         </td>

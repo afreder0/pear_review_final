@@ -1,15 +1,15 @@
 <div class="page-header">
-  <h3>Dishing #<%= @dishing.id %></h3>
+  <h3>Menu Record #<%= @dishing.id %></h3>
 </div>
 
 <div class="row">
   <div class="col-md-12">
     <dl class="dl-horizontal">
       <dt>Restaurant</dt>
-      <dd><%= @dishing.restaurant_id %></dd>
+      <dd><%= Restaurant.find(@dishing.restaurant_id).name %></dd>
 
       <dt>Dish</dt>
-      <dd><%= @dishing.dish_id %></dd>
+      <dd><%= Dish.find(@dishing.dish_id).dish_name %></dd>
 
     </dl>
 
