@@ -20,10 +20,10 @@
 
       <!-- Label and input for user_id -->
       <div class="form-group">
-        <label for="user_id" class="control-label">
+        <!-- <label for="user_id" class="control-label">
           User
-        </label>
-        <%= current_user.id %>
+        </label> -->
+        <% current_user.id %>
         <input type="hidden" name="user_id" value="<%= current_user.id%>">
       </div>
 
