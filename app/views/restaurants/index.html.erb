@@ -27,7 +27,7 @@
         <th>Actions</th>
       </tr>
 
-      <% @restaurants.each do |restaurant| %>
+      <% @restaurants.order('name').each do |restaurant| %>
       <tr>
         <td>
 <img src="<%= restaurant.cover_image %>" alt="" width="200" height="200"/></td>

@@ -15,7 +15,7 @@
         <th>Actions</th>
       </tr>
 
-      <% @dishes.each do |dish| %>
+      <% @dishes.order('dish_name').each do |dish| %>
       <tr>
         <td><%= dish.dish_name %></td>
         <td><%= dish.category %></td>
