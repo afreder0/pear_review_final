@@ -3,6 +3,10 @@ class FavoritesController < ApplicationController
     @favorites = Favorite.all
   end
 
+  def my_index
+    @favorites = Favorite.all
+  end
+
   def show
     @favorite = Favorite.find(params[:id])
   end
