@@ -2,15 +2,13 @@
   <h3><%= @restaurant.name %></h3>
 </div>
 
-<img src="<%= @restaurant.cover_image %>" alt="" height="400" />
 <div class="row">
   <div class="col-md-12">
     <dl class="dl-horizontal">
-      <!-- <dt>Cover image</dt> -->
-      <dd></dd>
 
-      <!-- <dt>Name</dt>
-      <dd><%= @restaurant.name %></dd> -->
+      <!-- over image-->
+      <dd><img src="<%= @restaurant.cover_image %>" alt="" height="400" /></dd>
+
 
       <% if @restaurant.street.present? %>
       <dt>Street</dt>

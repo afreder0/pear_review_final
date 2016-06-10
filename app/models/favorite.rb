@@ -4,8 +4,8 @@ class Favorite < ActiveRecord::Base
   validates :user_id, :presence => true, :uniqueness => true
   validates :dishing_id, :presence => true
   has_many :restaurant_id, dependent: :destroy
-  has_and_belongs_to_many :restaurants, join_table: :dishings
-  has_and_belongs_to_many :users, join_table: :dishings
+  has_and_belongs_to_many :restaurants, join_table: :dishings, :dependent => :destroy
+  has_and_belongs_to_many :users, join_table: :dishings, :dependent => :destroy
 
 
 end
