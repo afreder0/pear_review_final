@@ -14,17 +14,17 @@
       <% if @restaurant.street.present? %>
       <dt>Street</dt>
       <dd><%= @restaurant.street %></dd>
-          <% end %>
+      <% end %>
 
-          <% if @restaurant.neighborhood.present? %>
-          <dt>Neighborhood</dt>
-          <dd><%= @restaurant.neighborhood %></dd>
-              <% end %>
+      <% if @restaurant.neighborhood.present? %>
+      <dt>Neighborhood</dt>
+      <dd><%= @restaurant.neighborhood %></dd>
+      <% end %>
 
-              <% if @restaurant.city.present? %>
-              <dt>City</dt>
-              <dd><%= @restaurant.city %></dd>
-                  <% end %>
+      <% if @restaurant.city.present? %>
+      <dt>City</dt>
+      <dd><%= @restaurant.city %></dd>
+      <% end %>
 
       <dt>State</dt>
       <dd><%= @restaurant.state %></dd>
@@ -32,12 +32,12 @@
       <% if @restaurant.zip.present? %>
       <dt>Zip</dt>
       <dd><%= @restaurant.zip %></dd>
-          <% end %>
+      <% end %>
 
-          <% if @restaurant.short_description.present? %>
-          <dt>Description</dt>
-          <dd><%= @restaurant.short_description %></dd>
-              <% end %>
+      <% if @restaurant.short_description.present? %>
+      <dt>Description</dt>
+      <dd><%= @restaurant.short_description %></dd>
+      <% end %>
 
       <!-- <dt>Lng</dt>
       <dd><%= @restaurant.lng %></dd>
@@ -47,16 +47,34 @@
       <% if @restaurant.price.present? %>
       <dt>Price</dt>
       <dd><%= @restaurant.price %></dd>
-          <% end %>
+      <% end %>
 
 
-<h3>Menu Items</h3>
 
-
-<!-- Stuck. How do I pull items that have been linked through the Dishing table -->
-  <% if restaurant.dish.any? %>
-  <%= dishing.dish.pluck(:dish_name) %>
-<% end %>
+<div class="page-header">
+    <h3>Menu Items</h3>
+</div>
+<div class="row">
+  <div class="col-md-12">
+    <table class="table table-striped table-hover">
+      <tr>
+        <!-- <th>Dish comment</th> -->
+        <th>Dish</th>
+        <th>Actions</th>
+      </tr>
+<% @restaurant.dishes.each do |dish| %>
+<tr>
+  <td><%=dish.dish_name%></td>
+  <td>
+    <a href="/dishes/<%= dish.id %>" class="btn btn-primary">Show</a>
+    <a href="/dishes/<%= dish.id %>/edit" class="btn btn-warning">Edit</a>
+    <a href="/delete_dish/<%= dish.id %>" class="btn btn-danger" rel="nofollow">Delete</a>
+  </td>
+</tr>
+      <% end %>
+    </table>
+  </div>
+  </div>
 
 
 

@@ -26,7 +26,7 @@ Most Popular Dishes
         <td><%= User.find(favorite.user_id).email %></td>
 
         <td>
-          <a href="/favorites/<%= favorite.id %>" class="btn btn-primary">Show</a>
+          <a href="/favorite/<%= favorite.id %>" class="btn btn-primary">Show</a>
           <a href="/favorites/<%= favorite.id %>/edit" class="btn btn-warning">Edit</a>
           <a href="/delete_favorite/<%= favorite.id %>" class="btn btn-danger" rel="nofollow">Delete</a>
         </td>
